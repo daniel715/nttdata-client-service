@@ -1,7 +1,7 @@
-package com.example.reactiveservice.controller;
+package com.nttdata.clientservice.controller;
 
-import com.example.reactiveservice.model.Client;
-import com.example.reactiveservice.service.IClientService;
+import com.nttdata.clientservice.model.Client;
+import com.nttdata.clientservice.service.IClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

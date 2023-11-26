@@ -1,7 +1,7 @@
-package com.example.reactiveservice.service;
+package com.nttdata.clientservice.service;
 
-import com.example.reactiveservice.model.Client;
-import com.example.reactiveservice.repository.ClientMongoRepository;
+import com.nttdata.clientservice.model.Client;
+import com.nttdata.clientservice.repository.ClientMongoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

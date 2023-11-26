@@ -1,6 +1,6 @@
-package com.example.reactiveservice.repository;
+package com.nttdata.clientservice.repository;
 
-import com.example.reactiveservice.model.Client;
+import com.nttdata.clientservice.model.Client;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
 import org.springframework.stereotype.Repository;

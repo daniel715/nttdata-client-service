@@ -1,4 +1,4 @@
-package com.example.reactiveservice.model;
+package com.nttdata.clientservice.model;
 
 
 import lombok.AllArgsConstructor;
