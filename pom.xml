@@ -10,21 +10,17 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.example</groupId>
-	<artifactId>reactive-product-service</artifactId>
+	<groupId>com.nttdata</groupId>
+	<artifactId>reactive-client-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>reactive-product-service</name>
-	<description>reactive-product-service</description>
+	<name>reactive-client-service</name>
+	<description>reactive-client-service</description>
 
 	<properties>
 		<java.version>8</java.version>
 	</properties>
 
 	<dependencies>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-r2dbc</artifactId>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -33,23 +29,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
-<!--	    <dependency>-->
-<!--            <groupId>io.netty</groupId>-->
-<!--            <artifactId>netty-all</artifactId>-->
-<!--        </dependency>-->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>io.r2dbc</groupId>-->
-<!--			<artifactId>r2dbc-postgresql</artifactId>-->
-<!--			<version>0.8.13.RELEASE</version>-->
-<!--			<scope>runtime</scope>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -71,7 +56,6 @@
 			<artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
 			<version>3.2.0</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -79,8 +63,6 @@
 			<version>1.18.30</version>
 			<scope>provided</scope>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>
