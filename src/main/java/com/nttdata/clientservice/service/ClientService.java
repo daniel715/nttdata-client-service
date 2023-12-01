@@ -2,12 +2,16 @@ package com.nttdata.clientservice.service;
 
 import com.nttdata.clientservice.model.Client;
 import com.nttdata.clientservice.repository.ClientMongoRepository;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
+@AllArgsConstructor
+@NoArgsConstructor
 public class ClientService implements IClientService {
 
     @Autowired
