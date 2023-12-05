@@ -1,9 +1,7 @@
 package com.nttdata.clientservice.repository;
 
 import com.nttdata.clientservice.model.Client;
-import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.reactive.RxJava3CrudRepository;
 
-@Repository
-public interface ClientMongoRepository extends ReactiveMongoRepository<Client, String> {}
+public interface ClientMongoRepository extends RxJava3CrudRepository<Client, String> {}

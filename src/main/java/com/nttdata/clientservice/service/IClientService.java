@@ -1,22 +1,26 @@
 package com.nttdata.clientservice.service;
 
 import com.nttdata.clientservice.model.Client;
+import io.reactivex.rxjava3.core.Completable;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Maybe;
+import io.reactivex.rxjava3.core.Single;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 public interface IClientService {
 
-    Mono<Client> saveClient(Mono<Client> client);
+    Single<Client> saveClient(Single<Client> client);
 
     // read operation
-    Flux<Client> list();
+    Flowable<Client> list();
 
-    Mono<Client> findById(String id);
+    Single<Client> findById(String id);
 
     // update operation
-    Mono<Client> updateClient(Mono<Client> client, String clientId);
+    Single<Client> updateClient(Maybe<Client> client, String clientId);
 
-    // delete operation
-    Mono<Void> deleteClient(String clientId);
+//    // delete operation
+    Completable deleteClient(String clientId);
 
 }

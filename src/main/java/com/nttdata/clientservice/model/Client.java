@@ -16,7 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Client {
 
 	@Id
-	private String id;
+	private String _id;
     private String name;
     private String lastname;
     private String email;
@@ -26,6 +26,7 @@ public class Client {
     private String city;
     private String country;
     private String telephone;
+
 
 
 }
