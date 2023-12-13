@@ -24,8 +24,8 @@ public class ClientService implements IClientService {
     }
 
     @Override
-    public Single<Client> findById(String id) {
-        return this.clientRepository.findById(id).toSingle();
+    public Single<Client> findByDni(String dni) {
+        return this.clientRepository.findByDni(dni);
     }
 
     @Override

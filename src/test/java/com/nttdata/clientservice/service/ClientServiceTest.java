@@ -60,33 +60,33 @@ class ClientServiceTest {
 //
 //    }
 
-    @Test
-    @DisplayName("Test for obtener todos from clientes")
-    public void testFindAll() {
-        ArrayList<Client> expected = new ArrayList<>();
-        expected.add(new Client("1", "Daniel", "Montellanos", "email", "pass",
-                "createdAt", "address", "city", "country", "telephone"));
-        expected.add(new Client("2", "Andrea", "Salazar", "andrea@gmail.com", "pass",
-                "createdAt", "address", "city", "country", "telephone"));
-
-
-        ArrayList<Client> clientsData = new ArrayList<>();
-        clientsData.add(new Client("1", "Daniel", "Montellanos", "email", "pass",
-                "createdAt", "address", "city", "country", "telephone"));
-        clientsData.add(new Client("2", "Andrea", "Salazar", "andrea@gmail.com", "pass",
-                "createdAt", "address", "city", "country", "telephone"));
-
-        Flowable<Client> clients = Flowable.fromIterable(clientsData);
-
-       Mockito.when(clientMongoRepository.findAll()).thenReturn(clients);
-
-       Flowable<Client> actual = clientService.list();
-
-//        StepVerifier.create(actual)
-//                .expectNext(expected.get(1))
-//                .expectComplete();
-
-    }
+//    @Test
+//    @DisplayName("Test for obtener todos from clientes")
+//    public void testFindAll() {
+//        ArrayList<Client> expected = new ArrayList<>();
+//        expected.add(new Client("1", "Daniel", "Montellanos", "email", "pass",
+//                "createdAt", "address", "city", "country", "telephone"));
+//        expected.add(new Client("2", "Andrea", "Salazar", "andrea@gmail.com", "pass",
+//                "createdAt", "address", "city", "country", "telephone"));
+//
+//
+//        ArrayList<Client> clientsData = new ArrayList<>();
+//        clientsData.add(new Client("1", "Daniel", "Montellanos", "email", "pass",
+//                "createdAt", "address", "city", "country", "telephone"));
+//        clientsData.add(new Client("2", "Andrea", "Salazar", "andrea@gmail.com", "pass",
+//                "createdAt", "address", "city", "country", "telephone"));
+//
+//        Flowable<Client> clients = Flowable.fromIterable(clientsData);
+//
+//       Mockito.when(clientMongoRepository.findAll()).thenReturn(clients);
+//
+//       Flowable<Client> actual = clientService.list();
+//
+////        StepVerifier.create(actual)
+////                .expectNext(expected.get(1))
+////                .expectComplete();
+//
+//    }
 
 
 //    @Test

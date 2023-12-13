@@ -5,8 +5,6 @@ import io.reactivex.rxjava3.core.Completable;
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Maybe;
 import io.reactivex.rxjava3.core.Single;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 public interface IClientService {
 
@@ -15,7 +13,7 @@ public interface IClientService {
     // read operation
     Flowable<Client> list();
 
-    Single<Client> findById(String id);
+    Single<Client> findByDni(String dni);
 
     // update operation
     Single<Client> updateClient(Maybe<Client> client, String clientId);

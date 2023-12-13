@@ -19,6 +19,7 @@ public class Client {
 	private String _id;
     private String name;
     private String lastname;
+    private String dni;
     private String email;
     private String password;
     private String createdAt;
@@ -26,7 +27,5 @@ public class Client {
     private String city;
     private String country;
     private String telephone;
-
-
-
+    private String clientType; // si es personal o empresarial
 }

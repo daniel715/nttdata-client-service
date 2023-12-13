@@ -11,7 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/clients")
+@RequestMapping("api/v1/clients")
 public class ClientRestController {
 
 	@Autowired
@@ -22,9 +22,9 @@ public class ClientRestController {
     	return clientService.list();
     }
 
-    @RequestMapping(value ="/find/{id}" , produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Single<Client> findById(@PathVariable String id) {
-        return clientService.findById(id);
+    @RequestMapping(value ="/find/{dni}" , produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Single<Client> findByDni(@PathVariable String dni) {
+        return clientService.findByDni(dni);
     }
 
     @PostMapping(value = "/save")
